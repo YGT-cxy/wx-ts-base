@@ -2,6 +2,8 @@
 // 获取应用实例
 const app = getApp<IAppOption>()
 
+// import { apiLogin } from './../../api/user'
+
 Page({
   data: {
     motto: 'Hello World',
@@ -16,6 +18,7 @@ Page({
     })
   },
   onLoad() {
+    // apiLogin()
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
