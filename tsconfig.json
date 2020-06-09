@@ -2,8 +2,9 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "module": "CommonJS",
+    "module": "commonjs",
     "target": "ES5",
+    "esModuleInterop": true,
     "allowJs": false,
     "experimentalDecorators": true,
     "noImplicitThis": true,

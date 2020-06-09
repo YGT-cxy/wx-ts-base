@@ -1,19 +1,21 @@
-const Fly = require('./../lib/wx.js')
+import { Fly } from "../../typings/types/flyio"
 
-const flyio = new Fly()
+const Flyio = require('./../lib/flyio/wx.js')
+
+const flyio: Fly = new Flyio()
 
 // token请求白名单
 // const requestWhitelist = ['/api/wx/login']
-// const token = '1234'
+// const token = 'token'
 
 // 设置超时
 flyio.config.timeout = 15000
 
 // 设置请求基地址
-flyio.config.baseURL = 'https://blo.gjz.com'
+flyio.config.baseURL = ''
 
 // 添加请求拦截器
-flyio.interceptors.request.use( async (request: any): Promise<any> => {
+flyio.interceptors.request.use( async (request) => {
   // console.log(request)
   // Authorization
   // 添加token
@@ -25,7 +27,7 @@ flyio.interceptors.request.use( async (request: any): Promise<any> => {
 })
 
 // 添加响应拦截器
-flyio.interceptors.response.use( (response: any): any => {
+flyio.interceptors.response.use( (response) => {
     const { data } = response
     const { code, message } = data
     if (code === 200) {

@@ -2,7 +2,6 @@
 // 获取应用实例
 const app = getApp<IAppOption>()
 
-// import { apiLogin } from './../../api/user'
 
 Page({
   data: {
@@ -18,7 +17,6 @@ Page({
     })
   },
   onLoad() {
-    // apiLogin()
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

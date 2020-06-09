@@ -9,10 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "miniprogram-api-typings": "^2.8.3-1",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.9.5"
   }
 }
