@@ -6,10 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 tests/**/coverage/
-miniprogram/pages/**/*.js
-miniprogram/utils/*.js
-miniprogram/app.js
-miniprogram/api/*.js
+miniprogram/**/*.js
+!miniprogram/lib/**/*.js
 
 # Editor directories and files
 .idea
