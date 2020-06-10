@@ -3,6 +3,13 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
+  "usingComponents": {
+    "tabbar-classification": "components/tabbar-classification/tabbar-classification",
+    "tabbar-index": "components/tabbar-index/tabbar-index",
+    "tabbar-ranking": "components/tabbar-ranking/tabbar-ranking",
+    "tabbar-cart": "components/tabbar-cart/tabbar-cart",
+    "tabbar-user": "components/tabbar-user/tabbar-user"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
